@@ -1,0 +1,413 @@
+/* General Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #f2eee9;
+  color: #2b2a27;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  animation: fadeIn 1.5s ease-out;
+  font-display: swap; /* Ensures text is visible while fonts load */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(180, 165, 150, 0.3);
+  padding: 0.6rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 6px 22px rgba(100, 80, 60, 0.06);
+}
+
+.nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-brand {
+  font-weight: 550;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  color: #3a3530;
+  border-right: 2px solid #b5a392;
+  padding-right: 1.5rem;
+  transition: color 0.2s;
+}
+
+.nav-brand:hover {
+  color: #6b5b4e;
+}
+
+.nav-links {
+  text-decoration: none;
+  display: flex;
+  gap: 2.2rem;
+  font-weight: 430;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.nav-links a {
+  text-decoration: none !important; /* Ensure the underline is removed */
+  color: inherit; /* Keeps the color from the parent */
+  font-size: 1.05rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  text-decoration: none !important; /* Ensures no underline on hover */
+  color: #2e2a26;  /* Set hover color */
+  border-bottom-color: #b09a88; /* Customize border bottom color on hover */
+  text-decoration: none !important; /* Remove underline on hover */
+  transform: scale(1.05); /* Subtle scaling effect on hover */
+}
+
+.nav-links a.active {
+  border-bottom-color: #b09a88;
+  color: #2e2a26;
+  font-weight: 500;
+}
+
+/* SECTIONS */
+.section {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(160, 145, 130, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+/* WELCOME SECTION */
+.welcome-section {
+  background: rgba(240, 235, 225, 0.4);
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.welcome-text .pre-title {
+  font-size: 1.2rem;
+  font-weight: 350;
+  color: #7b6f64;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+.welcome-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #2b2622;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-text h2 {
+  font-size: 2rem;
+  font-weight: 330;
+  color: #5f554b;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #4d453e;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+.action-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  background: #dccfc2;
+  color: #2b2722;
+  padding: 0.9rem 2.5rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 240, 0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.3s ease, border-color 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #cdbead;
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 12px 20px -10px rgba(90, 75, 60, 0.3);
+  border-color: rgba(220, 200, 180, 0.8);
+}
+
+.btn:active {
+  transform: scale(0.98) translateY(0);
+  box-shadow: 0 5px 12px -6px rgba(60, 50, 40, 0.3);
+  transition: 0.05s;
+}
+
+.btn.primary {
+  background: #b6a492;
+  color: #fbf6f0;
+  border: none;
+  box-shadow: 0 8px 18px -6px rgba(100, 80, 70, 0.25);
+}
+
+.btn.primary:hover {
+  background: #a28d7a;
+  box-shadow: 0 14px 24px -8px #7f6b5b;
+}
+
+/* ORB VISUAL */
+.orb-visual {
+  width: 280px;
+  height: 280px;
+  background: url("keben.png") center/cover no-repeat; /* Set the image as background */
+  border-radius: 50%; /* Keeps it circular */
+  opacity: 0.75;
+  box-shadow: 0 20px 30px -6px #a28d7a;
+  margin-left: auto;
+  transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+.orb-visual:hover {
+  opacity: 0.9;
+  box-shadow: 0 25px 40px -4px #9a8473;
+}
+
+/* DESIGN CARDS */
+.design-card {
+  background: rgba(255, 250, 240, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 2rem;
+  padding: 1.8rem;
+  box-shadow: 0 10px 20px rgba(90, 70, 60, 0.1);
+  border: 1px solid rgba(245, 235, 220, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.2s ease;
+}
+
+.design-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 24px 32px rgba(100, 80, 60, 0.3);
+  background: rgba(255, 250, 240, 0.85);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  color: #7d6d5e;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #cfbfb0;
+  padding-bottom: 0.5rem;
+}
+
+.design-card h3 {
+  font-size: 1.9rem;
+  font-weight: 350;
+  color: #3e3730;
+  margin-bottom: 1.2rem;
+}
+
+.card-detail strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 530;
+  color: #6a5b4e;
+  margin-bottom: 0.4rem;
+}
+
+.card-detail p {
+  color: #625a52;
+  margin-bottom: 1rem;
+}
+
+/* PARTICIPATE FORM */
+.participate-form {
+  background: rgba(255, 250, 240, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 2.5rem;
+  padding: 2rem;
+  box-shadow: 0 15px 30px -10px rgba(80, 70, 60, 0.15);
+  border: 1px solid rgba(200, 180, 165, 0.5);
+  transition: box-shadow 0.3s, background 0.2s;
+}
+
+.participate-form:hover {
+  box-shadow: 0 22px 36px -14px #9b897b;
+  background: rgba(255, 250, 240, 0.82);
+}
+
+/* FORM ELEMENTS */
+input, textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #d6c9bc;
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #b7a392;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(170, 145, 125, 0.2);
+}
+
+/* FOOTER */
+.site-footer {
+  background: #ddd3c9;
+  padding: 1.8rem 0;
+  text-align: center;
+  color: #554d45;
+  font-size: 0.95rem;
+  border-top: 1px solid #cbb9a8;
+  transition: background 0.2s;
+}
+
+.site-footer:hover {
+  background: #d4c9be;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+  .welcome-grid, 
+  .enlight-grid, 
+  .participate-grid, 
+  .cards-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-brand {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .welcome-text h1 {
+    font-size: 3rem;
+  }
+
+  .orb-visual {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+/* Core Principles Box (Horizontal Layout) */
+.enlight-principles {
+  text-decoration: none;
+  background: rgba(255, 245, 235, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(180, 160, 145, 0.3);
+  backdrop-filter: blur(5px);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: space-between; /* Ensure items are spaced evenly */
+  flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+  gap: 1.5rem; /* Space between items */
+  margin-bottom: 2rem; /* Ensure the section has some spacing */
+}
+
+/* Core Principles List Items */
+.principles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Add gap between the boxes */
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.principles-list li {
+  background: rgba(255, 250, 240, 0.8);
+  padding: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  color: #5f5348;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(210, 190, 170, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s ease;
+  flex: 1 1 150px; /* Flex property to ensure the boxes are responsive */
+}
+
+/* Hover Effect for Core Principles Items */
+.principles-list li:hover {
+  background: rgba(255, 250, 240, 1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(90, 75, 60, 0.15);
+}
+
+/* Mobile View (Responsive) */
+@media (max-width: 800px) {
+  .enlight-principles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .principles-list {
+    justify-content: center;
+  }
+
+  .principles-list li {
+    flex: 1 1 100%; /* Stack items vertically on small screens */
+    margin-bottom: 1rem; /* Add margin for better spacing */
+  }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WEB PROJECT - CSS Zen Garden reimagined interface based on screenshots.">
+  <meta name="Author" content="BONGHANOY,KEVIN D.">
+  <title>Zen Garden · BONGHANOY,KEVIN</title>
+  
+  <!-- Preload Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="cc.css">
+  
+  <!-- Preload Image for performance -->
+  <link rel="preload" href="keben.png" as="image">
+  
+  <!-- Ensuring smooth font rendering -->
+  <style>
+    body {
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+      font-display: swap; /* Ensures text is visible while fonts are loading */
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">ZEN GARDEN</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#enlightenment">Enlightenment</a>
+        <a href="#designs">Designs</a>
+        <a href="#participate">Participate</a>
+        <a href="#submit" class="active">Submit Design</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home" class="main-content">
+    <!-- WELCOME Section -->
+    <section class="section welcome-section">
+      <div class="container">
+        <div class="welcome-grid">
+          <div class="welcome-text">
+            <p class="pre-title">Welcome to CSS</p>
+            <h1>Zen Garden</h1>
+            <h2>The Beauty of CSS Design</h2>
+            <p class="description">A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
+            <div class="action-row">
+              <a href="#designs" class="btn primary">View Designs</a>
+              <span class="built-with">DOWNLOAD <a href="https://csszengarden.com/examples/style.css" title="This page&#39;s sample CSS, the file you may modify."><u>CSS</u></a> AND <a href="https://csszengarden.com/examples/index" title="This page&#39;s source HTML code, not to be modified."><u>HTML</u></a></span>
+            </div>
+          </div>
+          <div class="welcome-abstract">
+            <div class="orb-visual"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENLIGHTENMENT Section -->
+    <section id="enlightenment" class="section enlightenment-section">
+      <div class="container">
+        <div class="enlight-header">
+          <h2>The Road to Enlightenment</h2>
+        </div>
+        <div class="enlight-grid">
+          <div class="enlight-text">
+            <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
+            <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP, and the major browser creators.</p>
+            <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+          </div>
+          <div class="enlight-principles">
+            <h3>Core Principles</h3>
+            <ul class="principles-list">
+              <li><a href="http://validator.w3.org/check/referer" title="Check the validity of this site’s HTML" class="zen-validate-html">HTML</a></li>
+              <li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site’s CSS" class="zen-validate-css">CSS</a></li>
+              <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a></li>
+              <li><a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a></li>
+              <li><a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a></li>
+              <li>SUMBMIT DESIGN</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESIGNS Showcase Section -->
+    <section id="designs" class="section designs-showcase">
+      <div class="container">
+        <div class="cards-row">
+          <div class="design-card">
+            <div class="card-header">
+              <span class="author">BONGHANOY, KEVIN D.</span>
+              <span class="role">WEB DEVELOPER</span>
+            </div>
+            <h3>Create a Portfolio</h3>
+            <div class="card-detail">
+              <strong>Steel</strong>
+              <p>Inspired design by Dan Mall with telling.</p>
+              <div class="tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Color</span>
+              </div>
+            </div>
+          </div>
+          <div class="design-card">
+            <div class="card-header">
+              <span class="author">BONGHANOY, KEVIN D.</span>
+              <span class="role">WEB DEVELOPER</span>
+            </div>
+            <h3>Apothecary</h3>
+            <div class="card-detail">
+              <p>A bold industrial design by Steffen Knoeller with metallic textures and strong grid.</p>
+              <div class="tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Texture</span>
+                <span class="tag">Grid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-row">
+          <div class="design-card">
+            <div class="card-header">
+              <span class="author">BONGHANOY, KEVIN D.</span>
+              <span class="role">Animation Tool</span>
+            </div>
+            <h3>Learn by Doing</h3>
+            <div class="card-detail">
+              <strong>Build Fast Reliable Results</strong>
+              <p>Full-screen immersive design by Elliot Jay Stocks pushing layout boundaries.</p>
+              <div class="tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Vintage</span>
+                <span class="tag">Detail</span>
+              </div>
+            </div>
+          </div>
+          <div class="design-card">
+            <div class="card-header">
+              <span class="author">BONGHANOY, KEVIN D.</span>
+              <span class="role">Portfolio</span>
+            </div>
+            <h3>Step by Step Tutorial</h3>
+            <div class="card-detail">
+              <span class="sub-author">BONGHANOY, KEVIN D.</span>
+              <p>A romantic, flowing design by Jeremy Carlson with graceful curves and gradients.</p>
+              <div class="tags">
+                <span class="tag">CSS3</span>
+                <span class="tag">Gradients</span>
+                <span class="tag">Flow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTICIPATE Section -->
+    <section id="participate" class="section participate-section">
+      <div class="container">
+        <div class="participate-grid">
+          <div class="participate-info">
+            <h2>Participate</h2>
+            <p>Strong visual design has always been our focus. You are modifying this page, so strong CSS skills are necessary too, but the example files are commented well enough that even CSS novices can use them as starting points.</p>
+            <p>Download the sample HTML and CSS to work on a copy locally. Once you have completed your masterpiece, send us a link to your CSS file and all associated assets.</p>
+          </div>
+          <div class="participate-form">
+            <form>
+              <div id="submit" class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g. Milad Abdi">
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="hello@zen.dev">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Tell us about your design..."></textarea>
+              </div>
+              <button type="submit" class="btn submit-btn">Submit Design</button>
+            </form>
+            <div class="edit-credit">Edit with <span class="lovable">Lovable</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>CSS Zen Garden · reimagined interface based on screenshots</p>
+    </div>
+  </footer>
+</body>
+</html>
