@@ -6,6 +6,7 @@
   <meta name="description" content="WEB PROJECT - CSS Zen Garden reimagined interface based on screenshots.">
   <meta name="Author" content="BONGHANOY,KEVIN D.">
   <title>Zen Garden · BONGHANOY,KEVIN</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <!-- Preload Google Fonts -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
@@ -31,13 +32,13 @@
   <!-- Fixed Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-brand">ZEN GARDEN</div>
+      <div data-aos="fade-up" class="nav-brand">ZEN GARDEN</div>
       <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#enlightenment">Enlightenment</a>
-        <a href="#designs">Designs</a>
-        <a href="#participate">Participate</a>
-        <a href="#submit" class="active">Submit Design</a>
+        <a data-aos="fade-up" href="#home">Home</a>
+        <a data-aos="fade-up" href="#enlightenment">Enlightenment</a>
+        <a data-aos="fade-up" href="#designs">Designs</a>
+        <a data-aos="fade-up" href="#participate">Participate</a>
+        <a data-aos="fade-up" href="#submit" class="active">Submit Design</a>
       </div>
     </div>
   </nav>
@@ -49,16 +50,16 @@
         <div class="welcome-grid">
           <div class="welcome-text">
             <p class="pre-title">Welcome to CSS</p>
-            <h1>Zen Garden</h1>
-            <h2>The Beauty of CSS Design</h2>
-            <p class="description">A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
+            <h1 data-aos="fade-up">Zen Garden</h1>
+            <h2 data-aos="fade-up">The Beauty of CSS Design</h2>
+            <p class="description" data-aos="fade-up">A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
             <div class="action-row">
-              <a href="#designs" class="btn primary">View Designs</a>
-              <span class="built-with">DOWNLOAD <a href="https://csszengarden.com/examples/style.css" title="This page&#39;s sample CSS, the file you may modify."><u>CSS</u></a> AND <a href="https://csszengarden.com/examples/index" title="This page&#39;s source HTML code, not to be modified."><u>HTML</u></a></span>
+              <a data-aos="fade-right" href="#designs" class="btn primary">View Designs</a>
+              <span data-aos="fade-right" class="built-with">DOWNLOAD <a href="https://csszengarden.com/examples/style.css" title="This page&#39;s sample CSS, the file you may modify."><u>CSS</u></a> AND <a href="https://csszengarden.com/examples/index" title="This page&#39;s source HTML code, not to be modified."><u>HTML</u></a></span>
             </div>
           </div>
           <div class="welcome-abstract">
-            <div class="orb-visual"></div>
+            <div data-aos="fade-left" class="orb-visual"></div>
           </div>
         </div>
       </div>
@@ -68,23 +69,23 @@
     <section id="enlightenment" class="section enlightenment-section">
       <div class="container">
         <div class="enlight-header">
-          <h2>The Road to Enlightenment</h2>
+          <h2 data-aos="flip-left">The Road to Enlightenment</h2>
         </div>
         <div class="enlight-grid">
           <div class="enlight-text">
-            <p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
-            <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP, and the major browser creators.</p>
-            <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+            <p data-aos="flip-left">Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
+            <p data-aos="flip-left">We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WaSP, and the major browser creators.</p>
+            <p data-aos="flip-left">The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
           </div>
           <div class="enlight-principles">
             <h3>Core Principles</h3>
-            <ul class="principles-list">
+            <ul data-aos="zoom-in" class="principles-list">
               <li><a href="http://validator.w3.org/check/referer" title="Check the validity of this site’s HTML" class="zen-validate-html">HTML</a></li>
               <li><a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site’s CSS" class="zen-validate-css">CSS</a></li>
               <li><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a></li>
               <li><a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a></li>
               <li><a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a></li>
-              <li>SUMBMIT DESIGN</li>
+              <li data-aos="zoom-in">SUMBMIT DESIGN</li>
             </ul>
           </div>
         </div>
@@ -92,10 +93,10 @@
     </section>
 
     <!-- DESIGNS Showcase Section -->
-    <section id="designs" class="section designs-showcase">
+    <section data-aos="zoom-in-up" id="designs" class="section designs-showcase">
       <div class="container">
         <div class="cards-row">
-          <div class="design-card">
+          <div data-aos="zoom-in-down" class="design-card">
             <div class="card-header">
               <span class="author">BONGHANOY, KEVIN D.</span>
               <span class="role">WEB DEVELOPER</span>
@@ -110,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="design-card">
+          <div data-aos="zoom-in-down" class="design-card">
             <div class="card-header">
               <span class="author">BONGHANOY, KEVIN D.</span>
               <span class="role">WEB DEVELOPER</span>
@@ -128,7 +129,7 @@
         </div>
 
         <div class="cards-row">
-          <div class="design-card">
+          <div data-aos="zoom-in-down" class="design-card">
             <div class="card-header">
               <span class="author">BONGHANOY, KEVIN D.</span>
               <span class="role">Animation Tool</span>
@@ -144,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="design-card">
+          <div data-aos="zoom-in-down" class="design-card">
             <div class="card-header">
               <span class="author">BONGHANOY, KEVIN D.</span>
               <span class="role">Portfolio</span>
@@ -169,11 +170,11 @@
       <div class="container">
         <div class="participate-grid">
           <div class="participate-info">
-            <h2>Participate</h2>
-            <p>Strong visual design has always been our focus. You are modifying this page, so strong CSS skills are necessary too, but the example files are commented well enough that even CSS novices can use them as starting points.</p>
-            <p>Download the sample HTML and CSS to work on a copy locally. Once you have completed your masterpiece, send us a link to your CSS file and all associated assets.</p>
+            <h2 data-aos="zoom-in-up">Participate</h2>
+            <p data-aos="zoom-in-up">Strong visual design has always been our focus. You are modifying this page, so strong CSS skills are necessary too, but the example files are commented well enough that even CSS novices can use them as starting points.</p>
+            <p data-aos="zoom-in-up">Download the sample HTML and CSS to work on a copy locally. Once you have completed your masterpiece, send us a link to your CSS file and all associated assets.</p>
           </div>
-          <div class="participate-form">
+          <div data-aos="zoom-in-up" class="participate-form">
             <form>
               <div id="submit" class="form-group">
                 <label for="name">Your Name</label>
@@ -201,5 +202,10 @@
       <p>CSS Zen Garden · reimagined interface based on screenshots</p>
     </div>
   </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
